@@ -1,0 +1,27 @@
+## CONFIGURATION FOR SUBSETTING AND SNP STATISTICS CALCULATION ##
+
+
+
+## INPUT
+
+RunName=subsetting_reg_st2_GWAS
+# Name for the run/subset (will be used to name the output files)
+
+ImagingSubsetData=/data/clusterfs/lag/users/jitame/SENT_CORE/geno/regenie/step_2_sent_all/gwas/st2_in/imagingT1
+
+# Path to the full imaging subset data that is used as a starting point for filtering
+# Enter only the prefix of the file (filename without chromosome number, .bgen, .sample, etc.)
+# There are four possible prefixes for the existing subsets:
+# Version 1, White British ancestry: imaging40k or imaging_40k_no_rel_filter
+# Version 2, White ancestry: imaging40k_wa or imaging40k_wa_no_rel_filter, 
+# It is recommended to copy the data from the workspace to the clusterfs before subsetting.
+
+SubjectList=/data/clusterfs/lag/users/jitame/SENT_CORE/exome_subs_plink.txt
+# A custom list of subjects to be included in the subset
+
+
+
+## OUTPUT
+
+OutDir=/data/clusterfs/lag/users/jitame/SENT_CORE/geno/regenie/gwas/st2_in/filtered
+# Working directory where (intermediate) output files are written to
